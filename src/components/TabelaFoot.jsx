@@ -1,10 +1,10 @@
 import React from "react";
 
-const TabelaFoot = () => {
+const TabelaFoot = (props) => {
     return (
         <tfoot>
             <tr>
-                <td>Este é o Rodapé</td>
+                <td colSpan={4}>Quantidade de livros na tabela: { props.qdelivros }</td>
             </tr>
         </tfoot>
     );
